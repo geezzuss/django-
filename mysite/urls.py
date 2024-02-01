@@ -47,4 +47,5 @@ from django.urls import include, path
 urlpatterns = [
     path("polls/", include("polls.urls")),  # Includes the URL patterns from the polls app
     path("admin/", admin.site.urls),        # Admin site
+    path("__debug__/", include("debug_toolbar.urls")),
 ]
